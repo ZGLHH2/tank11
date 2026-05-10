@@ -632,7 +632,7 @@ document.addEventListener('keydown', e => {
 document.addEventListener('keyup', e => { keys[e.code] = false; e.preventDefault(); });
 
 startBtn.addEventListener('click', () => {
-  if (gameState === 'paused' || gameState === 'gameover' || !gameState) {
+  if (gameState === 'idle' || gameState === 'paused' || gameState === 'gameover' || !gameState) {
     startGame();
   }
 });
